@@ -1,10 +1,70 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Form Registration</title>
-  </head>
-  <body>
-    <!-- Code Here -->
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Form Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Code Here -->
+
+  <div id="registration">
+    <div id="title">
+      <h1 id="title_h1">Registration Form</h1>
+    </div>
+    <form id="form" action="/register" method="POST">
+      <label for="name" id="name_label"></label> <br>
+      <input class="input_1" type="text" name="name" placeholder="Name" required> <br>
+
+      <label for="email" id="email_label"></label> <br>
+      <input class="input_1" type="email" name="email" placeholder="Email" required> <br>
+
+      <label for="phone" id="phone_label"> </label> <br>
+      <input class="input_1" type="tel" name="phone" minlength="6" maxlength="6" placeholder="Number Phone" required>
+      <br>
+
+      <label for="password" id="password_label"></label> <br>
+      <input class="input_1" type="password" name="password" minlength="6" id="password_input" placeholder="Password"
+        required> <br>
+
+      <br>
+
+      <input class="input_1" type="password" minlength="6" placeholder="Confirmed password" id="password_confirm"
+        required>
+
+      <br>
+      <br>
+      <div id="check">
+        <input type="checkbox" id="check1">
+        <label for="vehicle1"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </label><br>
+      </div>
+      <br>
+
+      <input type="checkbox" id="check2">
+      <label for="vehicle2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. .</label><br>
+
+      <br>
+      <input id="input_2" type="submit" value="Register">
+    </form>
+  </div>
+
+  <script>
+    var a = document.getElementById("password_input");
+    var b = document.getElementById("password_confirm");
+
+    function validatePassword() {
+      if (a.value != b.value) {
+        password_confirm.setCustomValidity("Passwords Don't Match");
+      } else {
+        password_confirm.setCustomValidity('');
+      }
+    }
+
+    password_input.onchange = validatePassword;
+    password_confirm.onkeyup = validatePassword;
+  </script>
+</body>
+
 </html>
