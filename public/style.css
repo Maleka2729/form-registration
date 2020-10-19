@@ -1,35 +1,35 @@
 body {
     background: linear-gradient(purple, #00e7ff);
     background-repeat: no-repeat;
-    font-family: 'Courier New', Courier, monospace ;
+    font-family: 'Courier New', Courier, monospace;
     height: 100vh;
-  }
+}
 
-#registration{
+#registration {
     background-color: #271380;
     border-radius: 20px;
     margin: auto;
-    width: 450px; 
+    width: 450px;
     color: white;
     border: solid #826182;
     position: relative;
     top: 100px;
 }
 
-#title{
+#title {
     text-align: center;
     position: relative;
     top: -5px;
     height: 50px;
 }
 
-#title_h3{
+#title_h3 {
     text-align: center;
 }
 
-#form{
-    padding-left: 50px;  
-    padding-right: 50px;  
+#form {
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 10px;
     padding-bottom: 20px;
     background-color: #443975a8;
@@ -37,13 +37,13 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.input_1{
+.input_1 {
     width: 100%;
     border-radius: 6px;
     height: 30px;
 }
 
-#input_2{
+#input_2 {
     border-radius: 6px;
     height: 30px;
     width: 30%;
@@ -51,6 +51,7 @@ body {
     left: 70%;
 }
 
-#check{
+#check_1,
+#check_2 {
     display: flex;
 }
