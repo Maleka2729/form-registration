@@ -1,0 +1,58 @@
+body {
+  background: linear-gradient(purple, #00e7ff);
+  background-repeat: no-repeat;
+  font-family: 'Courier New', Courier, monospace;
+  height: 100vh; }
+
+#registration {
+  background-color: #271380;
+  border-radius: 20px;
+  margin: auto;
+  width: 450px;
+  color: white;
+  border: solid #63467d;
+  position: relative;
+  top: 100px;
+  box-shadow: 3px 4px 15px black; }
+
+#title {
+  text-align: center;
+  position: relative;
+  top: -5px;
+  height: 50px; }
+
+#title_h3 {
+  text-align: center; }
+
+#form {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #443975a8;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+.input_1 {
+  width: 100%;
+  border-radius: 6px;
+  height: 33px; }
+
+#input_2 {
+  border-radius: 6px;
+  height: 33px;
+  color: white;
+  width: 30%;
+  position: relative;
+  left: 70%;
+  background-color: #59c044;
+  box-shadow: inset 0px -9px 1px 0px #317922; }
+
+#check_1,
+#check_2 {
+  display: flex;
+  font-size: 12px; }
+
+.conditions {
+  position: relative;
+  left: 35px; }

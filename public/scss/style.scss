@@ -11,9 +11,10 @@ body {
     margin: auto;
     width: 450px;
     color: white;
-    border: solid #826182;
+    border: solid #63467d;
     position: relative;
     top: 100px;
+    box-shadow: 3px 4px 15px black;
 }
 
 #title {
@@ -37,21 +38,33 @@ body {
     border-bottom-right-radius: 20px;
 }
 
+@mixin input {
+    border-radius: 6px;
+    height: 33px;
+}
+
 .input_1 {
     width: 100%;
-    border-radius: 6px;
-    height: 30px;
+    @include input;
 }
 
 #input_2 {
-    border-radius: 6px;
-    height: 30px;
+    @include input;
+    color: white;
     width: 30%;
     position: relative;
     left: 70%;
+    background-color: rgb(89, 192, 68);
+    box-shadow: inset 0px -9px 1px 0px #317922;
 }
 
 #check_1,
 #check_2 {
     display: flex;
+    font-size: 12px;
+}
+
+.conditions {
+    position: relative;
+    left: 35px;
 }
